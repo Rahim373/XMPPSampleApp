@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ninja.sakib.xmppsampleapp.views.MainActivity">
+
+    <EditText
+        android:id="@+id/receiverAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Receiver Address" />
+
+    <EditText
+        android:id="@+id/messageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/receiverAddress"
+        android:layout_marginRight="90dp"
+        android:hint="Write Message" />
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/receiverAddress"
+        android:text="Send" />
+
+    <ListView
+        android:id="@+id/messageList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messageText" />
+</RelativeLayout>
